@@ -6,7 +6,7 @@ DogApplication using Springboot and h2 database with JPA based on Java Developer
 
 - Application will run on port 8081
 
-###Endpoints:
+### Endpoints:
   - /dogs
   - /dogs/breed
   - /{id}/breed
