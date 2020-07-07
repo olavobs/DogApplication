@@ -12,7 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.udacity.dogRestApi.entity.Dog;
 import com.udacity.dogRestApi.service.DogService;
 
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
+
 @RestController
+@ApiResponses(value = {
+		@ApiResponse(code = 400, message = "This is a bad request, please follow the API documentation for the proper request format."),
+		@ApiResponse(code = 401, message = "Due to security constraints, your access request cannot be authorized. "),
+		@ApiResponse(code = 500, message = "The server is down. Please make sure that the Dog microservice is running.") })
+
 public class DogController {
 	private DogService dogService;
 
