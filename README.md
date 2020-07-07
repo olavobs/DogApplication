@@ -12,3 +12,8 @@ DogApplication using Springboot and h2 database with JPA based on Java Developer
   - /{id}/breed
   - /dogs/name
 
+### Swagger-ui
+
+```
+http://localhost:8081/swagger-ui.html
+
